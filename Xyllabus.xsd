@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="syllabus">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Course Title -->
+                <xs:element name="title" type="xs:string" />
+                
+                <!-- Course ID Number -->
+                <xs:element name="id" type="xs:string" />
+                
+                <!-- Person element for instructors and authors -->                
+                <xs:complexType name="person">
+                    <xs:sequence>
+                        <xs:element name="givenname" type="xs:string" />
+                        <xs:element name="surname" type="xs:string" />
+                        <xs:element name="email" type="xs:string">
+                            <xsd:restriction base="xsd:string"> 
+                                <xsd:pattern value="[^@]+@[^\.]+\..+"/> 
+                            </xsd:restriction>
+                        </xs:element>
+                        <xs:element name="phone" type="xs:string" />
+                        <xs:element name="website" type="xs:anyURI" />
+                        <xs:element name="address">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <!-- Street, city, postal code, country -->
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="type" type="xs:string" use="required">
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Author"/>
+                            <xs:enumeration value="Instructor"/>
+                            <xs:enumeration value="Assistant"/>
+                            <!-- Other roles? -->
+                        </xs:restriction>
+                    </xs:attribute>
+                </xs:complexType>
+                
+                <!-- Instructors -->
+                <xs:element name="roles">
+                    <xs:complexType>
+                        <xs:element name="person" maxOccurs="unbounded" type="person"/>
+                    </xs:complexType>
+                </xs:element>
+                
+                <!-- Syllabus Authors -->
+                <xs:element name="authors">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="person" maxOccurs="unbounded" type="person"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <!-- Term -->
+                <xs:element name="term">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="year" maxOccurs="unbounded" type="xs:integer"/>
+                            <xs:element name="period" maxOccurs="unbounded" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <!-- Website -->
+                <xs:element name="term" type="xs:anyURI" />
+                
+                <!-- Language of Instruction -->
+                <xs:element name="language" type="xs:string"></xs:element>
+                
+                
+                
+                <!-- Physical location of course -->
+                <xs:element name="location" type="xs:string" />
+                
+                <!-- Prerequisites -->
+                <xs:element name="prereqs">
+                </xs:element>
+                
+                <!-- Requirement Fulfilments (credits, distro requirements) -->
+                <xs:element name="fulfilments"></xs:element>
+                
+                <!-- Course Policies -->
+                <xs:element name="policies">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="policy" maxOccurs="unbounded" type="xs:string">
+                                <xs:attribute name="title" type="xs:string" use="required"/>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                
+                
+                <!-- Version History -->
+                <xs:element name="versions">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="version" maxOccurs="unbounded" type="xs:string">
+                                <xs:attribute name="number" type="xs:string" use="required"/>
+                                <xs:attribute name="current" type="xsd:boolean" />
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <!-- Host Institution and Department -->
+                <xs:element name="host">
+                </xs:element>
+                
+                <!-- Exam -->
+                <xs:element name="exam">
+                </xs:element>
+                
+                <!-- Assignments -->
+                <xs:element name="assignments">
+                </xs:element>
+                
+                <!-- Assessment -->
+                <xs:element name="assessment">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="item">
+                                <xs:attribute name="value" type="xs:string" use="required"/>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <!-- Full Description -->
+                <xs:element name="description" type="xs:string" />
+                
+                <!-- Learning Outcomes -->
+                <xs:element name="outcomes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="outcome">
+                                
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <!-- Course Schedule -->
+                <xs:element name="schedule">
+                </xs:element>
+                
+                <!-- Literature/readings -->
+                <xs:element name="literature">
+                    <!-- individual reading nodes (bibtex? DOIs?) -->
+                </xs:element>
+                
+                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

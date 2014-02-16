@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<syllabus>
+
+    <title>Course Title</title>
+    <id>201<id>
+    <roles>
+        <person type="instructor">
+            <givenname>Thomas</givenname>
+            <surname>Leeper</surname>
+            <email>thosjleeper@gmail.com</email>
+            <website>http://www.thomasleeper.com</website>
+            <phone>+19995551234</phone>
+        </person>
+    </roles>
+    <website>http://www.example.com/</website>
+    <language>English</language>
+    
+    <exam>Two hour in-person</exam>
+    
+    <assessment>
+        <item value="10">Participation</item>
+        <item value="40">Midterm</item>
+        <item value="50">Final</item>
+    </assessment>
+    
+    <description>This course is about something</description>
+    
+    <!-- MORE TO COME -->
+
+</syllabus>
