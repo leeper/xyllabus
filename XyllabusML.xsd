@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- Course Title -->
+    <xs:element name="title" type="xs:string" />
+    
+    <!-- Course Number -->
+    <xs:element name="number" type="xs:string" />
+    
+    <!-- Instructors (names, contact information, role) -->
+    <xs:element name="roles"></xs:element>
+    
+    <!-- Syllabus Authors -->
+    <xs:element name="authors"></xs:element>
+    
+    <!-- Term -->
+    <xs:element name="term"></xs:element>
+    
+    <!-- Website -->
+    <xs:element name="term"></xs:element>
+    
+    <!-- Language of Instruction -->
+    <xs:element name="language"></xs:element>
+    
+    
+    
+    <!-- Physical location of course -->
+    <xs:element name="location"></xs:element>
+    
+    <!-- Prerequisites -->
+    <xs:element name="prereqs"></xs:element>
+    
+    <!-- Requirement Fulfilments (credits, distro requirements) -->
+    <xs:element name="fulfilments"></xs:element>
+    
+    <!-- Course Policies -->
+    <xs:element name="policies"></xs:element>
+    
+    
+    
+    <!-- Version History -->
+    <xs:element name="versions"></xs:element>
+    
+    <!-- Host Institution and Department -->
+    <xs:element name="host"></xs:element>
+    
+    <!-- Exam -->
+    <xs:element name="exam"></xs:element>
+    
+    <!-- Assignments -->
+    <xs:element name="assignments"></xs:element>
+    
+    <!-- Assessment -->
+    <xs:element name="assessment"></xs:element>
+    
+    <!-- Full Description -->
+    <xs:element name="description"></xs:element>
+    
+    <!-- Learning Outcomes -->
+    <xs:element name="learningoutcomes"></xs:element>
+    
+    <!-- Course Schedule -->
+    <xs:element name="schedule"></xs:element>
+    
+    <!-- Literature/readings -->
+    
+</xs:schema>
