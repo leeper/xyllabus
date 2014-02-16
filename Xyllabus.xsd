@@ -69,12 +69,15 @@
                 <xs:element name="term" type="xs:anyURI" />
                 
                 <!-- Language of Instruction -->
-                <xs:element name="language" type="xs:string"></xs:element>
+                <xs:element name="language" type="xs:string" />
                 
                 
                 
                 <!-- Physical location of course -->
                 <xs:element name="location" type="xs:string" />
+                
+                
+                <!-- Course level (e.g., BA, MA, PhD) -->
                 
                 <!-- Prerequisites -->
                 <xs:element name="prereqs">
