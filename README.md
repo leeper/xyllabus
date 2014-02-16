@@ -1,10 +1,12 @@
-# XyllabusML: A Syllabus Markup Language #
+# A Syllabus Markup Language #
 
 This repository contains working code for a universal course syllabus markup language, tentatively called Xyllabus.
 
 ## Motivation ##
 
 Course syllabi are an integral part of contemporary higher education. They communicate almost all of the information about the content, objectives, outcomes, and prerequisites of a course. Syllabi should be open and shared - writing a syllabus from scratch is largely reinventing the wheel for the vast majority of courses. Yet, syllabi are almost always shared in proprietary or at least closed-source formats (e.g., Word or sourceless LaTeX-generated PDFs). The aim of this project is to develop an XML schema for the course syllabus, which is sufficiently general to contain all of the content that might find its way into a syllabus for any discipline, institution, and course format.
+
+The only discussion of a syllabus markup language I am aware of is described in [a 2004 conference paper](http://mzym.susu.ru/papers/Zamishlyaeva_SYRCoDIS-04.pdf), but appears to have not been developed.
 
 ## Current Stage ##
 
