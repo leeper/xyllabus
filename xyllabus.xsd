@@ -6,6 +6,21 @@
                 <!-- Course Title -->
                 <xs:element name="title" type="xs:string" />
                 
+                <!-- Keywords -->
+                <xs:element name="keywords">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="keyword" maxOccurs="unbounded" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <!-- License -->
+                <xs:complexType name="license" type="xs:string" >
+                    <xs:attribute name="name" type="xs:string" use="required" />
+                    <xs:attribute name="uri" type="xs:anyURI" />
+                </xs:complexType>
+                
                 <!-- Course ID Number -->
                 <xs:element name="id" type="xs:string" />
                 
@@ -14,13 +29,13 @@
                     <xs:sequence>
                         <xs:element name="givenname" type="xs:string" />
                         <xs:element name="surname" type="xs:string" />
-                        <xs:element name="email" type="xs:string">
+                        <xs:element name="email" type="xs:string" minOccurs="0">
                             <xsd:restriction base="xsd:string"> 
                                 <xsd:pattern value="[^@]+@[^\.]+\..+"/> 
                             </xsd:restriction>
                         </xs:element>
-                        <xs:element name="phone" type="xs:string" />
-                        <xs:element name="website" type="xs:anyURI" />
+                        <xs:element name="phone" type="xs:string" minOccurs="0" />
+                        <xs:element name="website" type="xs:anyURI" minOccurs="0" />
                         <xs:element name="address">
                             <xs:complexType>
                                 <xs:sequence>
