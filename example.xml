@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<syllabus>
+<syllabus
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="xyllabus.xsd">
 
     <title>Course Title</title>
     <id>201<id>
@@ -15,6 +17,8 @@
     </roles>
     <website>http://www.example.com/</website>
     <language>English</language>
+    
+    <license name="Creative Commons Attribution 3.0" />
     
     <exam>Two hour in-person</exam>
     
