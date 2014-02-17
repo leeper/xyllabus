@@ -1,6 +1,6 @@
 # A Syllabus Markup Language #
 
-This repository contains working code for a universal course syllabus markup language, tentatively called Xyllabus.
+This repository contains working code for a universal course syllabus markup language, tentatively called xyllabus.
 
 ## Motivation ##
 
@@ -10,9 +10,9 @@ The aim of this project is to develop an XML schema for the course syllabus, whi
 
 The advantages of a markup language are substantial:
 
- 1. *Separating content and styling*: Xyllabus is platform- and format-independent, meaning it can be used to create syllabi that will be printed or stored online in any other format. Migrating from one format to another should be effortless and instantaneous.
- 2. *Making syllabi semantic*: Syllabi should be readable by humans and computers.
- 3. *Measuring research impact*: The single most useful measure of scholarly impact is the citation. Yet citations are only measured when used in other research. Impactful research also plays an important role in teaching, so Xyllabus will enable the tracking and measurement of research through its use in subsequent teaching.
+ 1. **Separating content and styling**: xyllabus is platform- and format-independent, meaning it can be used to create syllabi that will be printed or stored online in any other format. Migrating from one format to another should be effortless and instantaneous.
+ 2. **Making syllabi semantic**: Syllabi should be readable by humans and computers.
+ 3. **Measuring research impact**: The single most useful measure of scholarly impact is the citation. Yet citations are only measured when used in other research. Impactful research also plays an important role in teaching, so xyllabus will enable the tracking and measurement of research through its use in subsequent teaching.
 
 Note: The only discussion of a syllabus markup language I am aware of is described in [a 2004 conference paper](http://mzym.susu.ru/papers/Zamishlyaeva_SYRCoDIS-04.pdf), but appears to have not been developed.
 
@@ -22,7 +22,7 @@ Drafting the schema and trying out the markup.
 
 ## Next steps ##
 
- 1. XSLT (XSL Transform) templates for writing to LaTeX, ODF, Markup, HTML, etc.
+ 1. XSLT (XSL Transform) templates for writing to LaTeX, ODF, Markdown, HTML, etc.
  2. BibTeX and DOI integration for assigned course materials
  3. Some kind of interface to write valid Xyllabus XML files
  4. Write scrapers to transform existing syllabi into Xyllabus
